@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>排序</title>
+</head>
+<body>
+    <h4>O(n*n)冒泡排序：</h4>
+    <p>
+        遍历整个数组，比较相邻的两个元素，大的往后排，一轮下来可以确定最大的数，重复以上操作
+    </p>
+    <h4>O(n log2 n)快速排序：</h4>
+    <p>
+        每次拿一个数作为基准，大的排后面，小的排前面，依次对比，每次对比的范围会越来越小
+    </p>
+    <h4>O(n + max)基数排序</h4>
+    <p>
+        创建10个桶(0-9)，遍历每个数字的个位，将数字放到对应相同个位数的桶中，然后依次取出，
+        再遍历数字的十位(没有十位的补0)，将数字放到对应相同十位数的桶中，重复以上操作，直到
+        遍历完最高位
+    </p>
+</body>
+</html>

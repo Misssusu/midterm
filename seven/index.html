@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTTP请求的内容</title>
+</head>
+<body>
+    <span>
+        POST /path HTTP/1.1
+        Host：www.baodu.com
+        User-Agent：Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36
+        Accept：text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+        Content-Type：application/x-www-form-unlencode
+        <!-- 空行 -->
+        username=ff&&password=123
+    </span>
+    <h4>Content-Type的四种类型</h4>
+    <p>
+        Content-Type：application/x-www-form-unlencode
+        Content-Type：multipart/form-data
+        Content-Type：application/json
+        Content-Type：text/html
+    </p>
+</body>
+</html>

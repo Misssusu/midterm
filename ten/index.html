@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数组去重</title>
+</head>
+<body>
+    <h2>数组去重</h2>
+    <h4>将一个伪数组转为真正的数组的两种方式</h4>
+    <p>
+        1. Array.prototype.slice.call(obj)
+    </p>
+    <p>2. Array.from(obj)</p>
+</body>
+<script>
+    var array = [1,5,2,3,4,2,3,1,3,4];
+    function unique(arr) {
+        var result = [];
+        arr.forEach((element,index) => {
+            if(result.indexOf(element) < 0){
+                result.push(element)
+            }
+        });
+        return result;
+    }
+    console.log(unique(array))
+
+    function unique1(arr) {
+        return Array.from(new Set(arr))
+    }
+    console.log(unique1(array))
+</script>
+</html>
