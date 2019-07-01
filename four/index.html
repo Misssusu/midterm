@@ -21,12 +21,16 @@
     function fn() {
         let num = 1;
         return function fn1() {
+            console.log(this)
             return num++;
         }
     }
-    var f = fn();
-    f()   //1
-    f()   //2
-    f()   //3
+    var result = fn();
+    result()   //1
+    result()   //2
+    result()   //3
+    //result就是闭包函数fn1，fn是fn1的父函数，fn1被赋给了一个全局变量，这导致fn1始终存在于内存中，
+    //而fn1的内存依赖于fn，因此fn也始终存在内存中，不会在调用结束后，被垃圾回收机制回收
+
 </script>
 </html>
