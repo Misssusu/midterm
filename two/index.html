@@ -22,7 +22,7 @@
       }
     3.使用动态的rem，rem是根元素的font-size，使用rem设置元素宽高实现等比例缩放。
       由于将px转为rem每次都需要计算，比较麻烦，使用scss实现px自动转为rem
-      @function px( $px ){
+      @function px2rem( $px ){
         @return $px/$designWidth*10 + rem;
       }
       $designWidth: 375px; 设计稿的宽度
